@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="light">
+<head>
+  <title>Gigya Connectivity Tester</title>
+  <!-- Main Solarize Theme -->
+  <link rel="stylesheet" href="css/solarize.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Latest version of jQuery (required for Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://jquery-json.googlecode.com/files/jquery.json-2.3.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="lodash.min.js"></script>
+  <script src="sugar-1.4.1-custom.min.js"></script>
+  <script src="connectivity-tester.js"></script>
+</head>
+<body>
+  <div id="outer" class="outer">
+    <div class="container-fluid">
+      <div id="outertop" class="col-md-12">
+        <h2>Gigya Connectivity Tester</h2>
+        <div class="form-group">
+          <div>
+            This tool is used to test connectivity to Gigya and common Social Network endpoints. Click the button below to run the tests:<br/>
+            <button class="btn btn-primary" class="form-control" onclick="runConnectionTests('validation');">Run Tests</button><br/><br/>
+          </div>
+        </div>
+        <div id="bottom" class="bs-callout bs-callout-primary bottom">
+          <h4>Results</h4>
+          <div id="validation" class="container-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <?php
+    foreach ($errors as $value) {
+      ?>
+      <div class="bs-callout bs-callout-danger"><h4><?=$value['message']?></h4><pre><?=$value['log']?></pre></div>
+      <?php
+    }
+    ?>
+    <?php
+    if (count($debug) > 0) {
+      ?>
+      <div id="debug" class="bs-callout bs-callout-info">
+        <h4>Debug</h4>
+        <pre><?=json_encode($debug, JSON_PRETTY_PRINT)?></pre>
+      </div>
+      <?php
+    }
+    ?>-->
+  </div>
+</body>
+</html>
