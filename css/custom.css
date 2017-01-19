@@ -18,14 +18,14 @@ div.outer {
 }
 
 div.header-global {
-  margin: -15px;
-  position: fixed;
-  top: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: block;
   width: 100%;
   height: 60px;
   background-color: white;
-  z-index: -2000;
+  z-index: 2000;
   border-bottom: 1px solid gray;
 }
 
@@ -170,14 +170,15 @@ td.bits {
 .logo {
   max-width: 124px;
   width: 100%;
-  margin-top: 1.05rem;
+  margin-top: 0.45rem;
+  display: inline-block;
+  float: left;
 }
 
 .logo svg {
-  max-height: 40px !important;
+  /*max-height: 40px !important;*/
 }
 
 .logo a {
-  display: block;  
+  display: block;
 }
-
