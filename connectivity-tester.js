@@ -118,18 +118,6 @@ var settings = {
       ]
     },
     {
-      id: "gigya_chat",
-      label: "Gigya Chat",
-      services: [
-        { label: "us1", uri: "http://chat.us1.gigya.com/chat.getMessages" },
-        { label: "eu1", uri: "http://chat.eu1.gigya.com/chat.getMessages" },
-        { label: "au1", uri: "http://chat.au1.gigya.com/chat.getMessages" },
-        { label: "us1-secure", uri: "https://chat.us1.gigya.com/chat.getMessages" },
-        { label: "eu1-secure", uri: "https://chat.eu1.gigya.com/chat.getMessages" },
-        { label: "au1-secure", uri: "https://chat.au1.gigya.com/chat.getMessages" }
-      ]
-    },
-    {
       id: "gigya_admin",
       label: "Gigya Admin",
       services: [
@@ -359,7 +347,7 @@ function runConnectionTests(resultsElementId) {
         oReq.addEventListener("error", function(e) {
           updateStatus(provider, service.label, "fail", service.uri, jqXHR.status);
         }, false);
-        oReq.open("GET",service.uri);   
+        oReq.open("GET",service.uri);
         oReq.send(null);
       }
     });
