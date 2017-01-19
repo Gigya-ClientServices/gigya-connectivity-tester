@@ -163,7 +163,7 @@ var settings = {
       id: "facebook",
       label: "Facebook",
       services: [
-        { label: "www", uri: "https://www.facebook.com/login.php", type: "web" },
+        //{ label: "www", uri: "https://www.facebook.com/login.php", type: "web" },
         { label: "Open Graph", uri: "https://graph.facebook.com" }
       ]
     },
@@ -171,8 +171,8 @@ var settings = {
       id: "twitter",
       label: "Twitter",
       services: [
-        { label: "www", uri: "https://twitter.com/login/", type: "web" },
-        { label: "API", uri: "http://cdn.api.twitter.com/1/urls/count.json?url=http%3A%2F%2Ftools.gigya-cs.com" }//,
+        //{ label: "www", uri: "https://twitter.com/login/", type: "web" },
+        { label: "API", uri: "https://api.twitter.com/1.1/search/tweets.json?q=%40twitterapi" }//,
         //{ label: "OAuth", uri: "https://api.twitter.com/oauth/request_token", type: "oauth", method: "GET" }
       ]
     },
@@ -180,7 +180,7 @@ var settings = {
       id: "googleplus",
       label: "Google+",
       services: [
-        { label: "www", uri: "https://plus.google.com/", type: "web" },
+        //{ label: "www", uri: "https://plus.google.com/", type: "web" },
         { label: "login", uri: "https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" },
         { label: "People API", uri: "https://www.googleapis.com/plus/v1/people/" }
       ]
@@ -189,7 +189,7 @@ var settings = {
       id: "linkedin",
       label: "LinkedIn",
       services: [
-        { label: "www", uri: "https://www.linkedin.com/uas/login", type: "web" },
+        //{ label: "www", uri: "https://www.linkedin.com/uas/login", type: "web" },
         { label: "People API", uri: "https://api.linkedin.com/v1/people/~?format=json" }
       ]
     }
